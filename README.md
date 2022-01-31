@@ -27,7 +27,7 @@ Use the Dockerfile to build, map port 80 to port 80, run the container, and visi
 
 ## Evolution from LaTeX
 
-The original idea was started with [LaTeX](https://www.latex-project.org/) and his package [TikZ](https://www.ctan.org/pkg/pgf), see the code and example: [https://github.com/jhordyess/cornell-notes-generator/tree/latex](https://github.com/jhordyess/cornell-notes-generator/tree/latex)
+The original idea was started with [LaTeX](https://www.latex-project.org/) and its package [TikZ](https://www.ctan.org/pkg/pgf), see the code and example: [https://github.com/jhordyess/cornell-notes-generator/tree/latex](https://github.com/jhordyess/cornell-notes-generator/tree/latex)
 
 Now uses [React](https://reactjs.org/) to have more control for: lengths, rows, columns, use portrait or landscape, view in the letter or A4 size, single-sided or double-sided, and so on.
 
