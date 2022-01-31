@@ -1,1 +1,27 @@
-
+div.container > div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space);
+}
+div.container > div > div.options {
+}
+div.container > div > .pdf-viewer {
+  width: 100%;
+  height: 500px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 4px 8px;
+}
+div.container > footer {
+  margin-top: 18px;
+  padding-top: 8px;
+  border-top: 1px solid var(--primary-color);
+  text-align: center;
+}
+div.container > footer > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+div.container > footer > a:hover {
+  color: var(--hover-color);
+}
