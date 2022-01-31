@@ -1,7 +1,7 @@
 {
   "name": "cornell-notes-generator",
   "version": "1.0.0",
-  "description": "A simple Cornell notes generator with LaTeX.",
+  "description": "A simple Cornell notes generator with React.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

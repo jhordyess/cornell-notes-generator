@@ -1,6 +1,6 @@
 # Cornell Notes Generator
 
-A simple Cornell notes generator with [React-pdf](https://react-pdf.org/).
+A simple Cornell notes generator with [React](https://reactjs.org/) .
 
 After learning how to take the best notes, I create this.
 
