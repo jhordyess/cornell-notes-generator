@@ -12,7 +12,7 @@ Properties: letter paper, double-sided, 1cm of margin, portrait letter, and some
 
 ## Online
 
-See live: [https://jhordyess.github.io/cornell-notes-generator/](https://jhordyess.github.io/cornell-notes-generator/).
+See online: [https://jhordyess.github.io/cornell-notes-generator/](https://jhordyess.github.io/cornell-notes-generator/).
 
 ## Dockerfile
 
