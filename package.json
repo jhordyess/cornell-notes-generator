@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "A simple Cornell notes generator with React.",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
