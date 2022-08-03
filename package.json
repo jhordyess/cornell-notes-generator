@@ -22,6 +22,12 @@
     "url": "https://github.com/jhordyess/cornell-notes-generator/issues"
   },
   "homepage": "https://github.com/jhordyess/cornell-notes-generator#readme",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
     "@react-pdf/renderer": "^2.3.0",
     "react": "^17.0.2",
