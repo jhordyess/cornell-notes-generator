@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
       {
-        // test: /\.(js|jsx)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -32,6 +32,14 @@ module.exports = {
   resolve: {
     extensions: ["*", ".js", ".jsx"],
     fallback: {
+      module: "empty",
+      dgram: "empty",
+      dns: "mock",
+      fs: "empty",
+      http2: "empty",
+      net: "empty",
+      tls: "empty",
+      child_process: "empty",
       process: require.resolve("process/browser"),
       zlib: require.resolve("browserify-zlib"),
       stream: require.resolve("stream-browserify"),
@@ -46,5 +54,11 @@ module.exports = {
       process: "process/browser",
     }),
   ],
-  mode: "development",
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "docs"),
+    },
+    host: "localhost",
+    port: 3000,
+  },
 };
