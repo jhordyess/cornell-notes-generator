@@ -14,9 +14,13 @@ Properties: letter paper, double-sided, 1cm of margin, portrait letter, and some
 
 See online: [https://jhordyess.github.io/cornell-notes-generator/](https://jhordyess.github.io/cornell-notes-generator/).
 
-## Dockerfile
+## Dockerize
 
-Use the Dockerfile to build, map port 80 to port 80, run the container, and visit [http://localhost/cornell-notes-generator/](http://localhost/cornell-notes-generator/).
+Run the `docker.sh` file, it will create a new container image with the tag `jhordyess/conage` and run it; so you can visit [http://localhost](http://localhost).
+
+```sh
+bash docker.sh
+```
 
 ## Dev Info
 
@@ -27,10 +31,14 @@ Use the Dockerfile to build, map port 80 to port 80, run the container, and visi
 
 ## Evolution from LaTeX
 
-The original idea was started with [LaTeX](https://www.latex-project.org/) and its package [TikZ](https://www.ctan.org/pkg/pgf), see the code and example: [https://github.com/jhordyess/cornell-notes-generator/tree/latex](https://github.com/jhordyess/cornell-notes-generator/tree/latex)
+The original idea was started with [LaTeX](https://www.latex-project.org/) and its package [TikZ](https://www.ctan.org/pkg/pgf)<>, see the code and example: [https://github.com/jhordyess/cornell-notes-generator/tree/latex](https://github.com/jhordyess/cornell-notes-generator/tree/latex)
 
 Now uses [React](https://reactjs.org/) to have more control for: lengths, rows, columns, use portrait or landscape, view in the letter or A4 size, single-sided or double-sided, and so on.
 
+## License
+
+© 2022 [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license.
+
 ---
 
-@2022 Jhordyess
+Made with 💪 by [Jhordyess](https://www.jhordyess.com/)

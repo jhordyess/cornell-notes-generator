@@ -19,7 +19,7 @@ const App = () => {
       </div>
       <footer>
         Made with 💪 by{" "}
-        <a href="https://jhordyess.com" target="_blank" rel="noreferrer">
+        <a href="https://www.jhordyess.com" target="_blank" rel="noreferrer">
           Jhordyess
         </a>
       </footer>
