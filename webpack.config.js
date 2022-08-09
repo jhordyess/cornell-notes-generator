@@ -60,6 +60,6 @@ module.exports = {
     },
     watchFiles: path.join(__dirname, "./src/**"),
     host: "localhost",
-    port: 3000,
+    port: 3640,
   },
 };
