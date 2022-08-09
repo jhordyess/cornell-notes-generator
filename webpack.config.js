@@ -2,10 +2,10 @@ const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
-  entry: path.resolve(__dirname, "./src/index.jsx"),
+  entry: path.join(__dirname, "src", "index.jsx"),
   output: {
-    path: path.resolve(__dirname, "./docs"),
-    filename: "main.js",
+    path: path.resolve(__dirname, "docs"),
+    filename: "bundle.js",
   },
   module: {
     rules: [
@@ -14,13 +14,6 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-react"],
-            /* plugins: [
-              "@babel/plugin-proposal-optional-chaining",
-              "@babel/plugin-proposal-nullish-coalescing-operator",
-            ], */
-          },
         },
       },
       {
@@ -30,7 +23,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: [".js", ".jsx"],
     fallback: {
       module: "empty",
       dgram: "empty",
@@ -58,7 +51,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "docs"),
     },
-    watchFiles: path.join(__dirname, "./src/**"),
+    watchFiles: path.join(__dirname, "src", "**"),
     host: "localhost",
     port: 3640,
   },
