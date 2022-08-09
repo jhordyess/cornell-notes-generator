@@ -58,6 +58,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "docs"),
     },
+    watchFiles: path.join(__dirname, "./src/**"),
     host: "localhost",
     port: 3000,
   },

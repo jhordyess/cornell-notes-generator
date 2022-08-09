@@ -5,7 +5,7 @@ npm i react@^17 react-dom@^17
 npm i react-color
 npm i @react-pdf/renderer
 
-npm i -D webpack webpack-cli webpack-dev-server path
+npm i -D webpack webpack-cli webpack-dev-server path webpack-bundle-analyzer
 npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react
 npm i -D style-loader css-loader
 #? https://react-pdf.org/advanced#webpack-5
