@@ -22,6 +22,12 @@ Run the `docker.sh` file, it will create a new container image with the tag `jho
 bash docker.sh
 ```
 
+Run for PowerShell `docker.ps1`.
+
+```ps1
+& docker.ps1
+```
+
 ## Dev Info
 
 - JavaScript library: [Meta - React](https://reactjs.org/)
