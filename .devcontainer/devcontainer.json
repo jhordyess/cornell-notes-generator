@@ -1,12 +1,17 @@
 {
   "name": "cornell-notes-generator",
   "image": "jhordyess/node:16",
-  "extensions": [
-    "esbenp.prettier-vscode",
-    "burkeholland.simple-react-snippets"
-  ],
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "burkeholland.simple-react-snippets"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
   },
   "remoteUser": "node"
 }
