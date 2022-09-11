@@ -2,11 +2,11 @@ FROM node:16 as build
 RUN apt-get update --no-install-recommends \
   && apt-get upgrade -y \
   && apt-get autoremove --purge -y
-RUN npm i npm@latest -g
+RUN npm i npm -g
 WORKDIR /app
 COPY . ./
 RUN npm i
-RUN npx webpack --mode production
+RUN npm run build
 
 FROM nginx:latest
 RUN apt-get update --no-install-recommends \

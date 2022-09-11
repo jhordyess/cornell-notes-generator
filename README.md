@@ -16,7 +16,7 @@ See online: [https://jhordyess.github.io/cornell-notes-generator/](https://jhord
 
 ## Dockerize
 
-Run the `docker.sh` file, it will create a new container image with the tag `jhordyess/conage` and run it; so you can visit [http://localhost](http://localhost).
+Run the `docker.sh` file, it will create a new container image with the tag `jhordyess/conoge` and run it; so you can visit [http://localhost](http://localhost).
 
 ```sh
 bash docker.sh
@@ -40,6 +40,10 @@ Run for PowerShell `docker.ps1`.
 The original idea was started with [LaTeX](https://www.latex-project.org/) and its package [TikZ](https://www.ctan.org/pkg/pgf), see the code and example: [https://github.com/jhordyess/cornell-notes-generator-latex](https://github.com/jhordyess/cornell-notes-generator-latex)
 
 Now uses [React](https://reactjs.org/) to have more control for: lengths, rows, columns, use portrait or landscape, view in the letter or A4 size, single-sided or double-sided, and so on.
+
+## TODO
+
+- Add form for custom output.
 
 ## License
 

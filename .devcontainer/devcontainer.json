@@ -9,7 +9,7 @@
         "burkeholland.simple-react-snippets"
       ],
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
+        "terminal.integrated.defaultProfile.linux": "zsh"
       }
     }
   },
