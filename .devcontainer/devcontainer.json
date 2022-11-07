@@ -13,5 +13,6 @@
       }
     }
   },
+  "postCreateCommand": "bash config.sh",
   "remoteUser": "node"
 }
