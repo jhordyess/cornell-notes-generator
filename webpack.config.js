@@ -20,6 +20,7 @@ module.exports = {
       },
     ],
   },
+  // Webpack 5 compatibility
   resolve: {
     extensions: [".js", ".jsx"],
     fallback: {
@@ -45,6 +46,7 @@ module.exports = {
       process: "process/browser",
     }),
   ],
+  //
   devServer: {
     static: {
       directory: path.join(__dirname, "docs"),
