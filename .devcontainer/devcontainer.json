@@ -1,7 +1,6 @@
 {
   "name": "cornell-notes-generator",
   "image": "jhordyess/node:16",
-
   "customizations": {
     "vscode": {
       "extensions": [

@@ -1,6 +1,6 @@
 import React from "react";
 import { Svg } from "@react-pdf/renderer";
-import { Lines, Border } from "./SVGs";
+import { Lines, Border } from "./SVG-elements";
 
 const cm2px = (param = 0) => {
   return !isNaN(param) && param > 0
@@ -48,7 +48,7 @@ const Grid = ({
   );
 };
 
-const Cornell = ({
+export default function ({
   rowsNotesCues,
   colsNotes,
   colsCues,
@@ -60,7 +60,7 @@ const Cornell = ({
   color = "#000",
   sw = true,
   ...props
-}) => {
+}) {
   props.cellWidth = cellWidth;
   props.cellHeight = cellHeight;
   props.borderColor = props.horiLineCol = props.vertLineCol = color;
@@ -92,5 +92,4 @@ const Cornell = ({
       />
     </Svg>
   );
-};
-export default Cornell;
+}

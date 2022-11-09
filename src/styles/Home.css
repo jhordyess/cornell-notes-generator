@@ -3,8 +3,6 @@ div.container > div {
   flex-direction: row;
   gap: var(--space);
 }
-div.container > div > div.options {
-}
 div.container > div > .pdf-viewer {
   width: 100%;
   height: 500px;

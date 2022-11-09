@@ -1,10 +1,13 @@
 const webpack = require("webpack");
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: path.join(__dirname, "src", "index.jsx"),
   output: {
-    path: path.resolve(__dirname, "docs"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
   module: {
@@ -16,13 +19,17 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
-  // Webpack 5 compatibility
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      "@components": path.resolve(__dirname, "src", "components"),
+      "@styles": path.resolve(__dirname, "src", "styles"),
+    },
+    // Webpack 5 compatibility
     fallback: {
       module: "empty",
       dgram: "empty",
@@ -45,11 +52,19 @@ module.exports = {
       Buffer: ["buffer", "Buffer"],
       process: "process/browser",
     }),
+    //
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "public", "index.html"),
+      filename: "index.html",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
+    }),
+    new CleanWebpackPlugin(),
   ],
-  //
   devServer: {
     static: {
-      directory: path.join(__dirname, "docs"),
+      directory: path.join(__dirname, "dist"),
     },
     watchFiles: path.join(__dirname, "src", "**"),
     host: "localhost",

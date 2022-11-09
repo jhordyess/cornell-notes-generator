@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import PDF from "./components/PDF";
+import "@styles/Home.css";
+import PDF from "@components/Cornell";
 import { ChromePicker } from "react-color";
 
 const App = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Page, Document, StyleSheet, PDFViewer } from "@react-pdf/renderer";
 
-import Cornell from "./Cornell";
+import CornellPage from "./CornellPage";
 
 const styles = StyleSheet.create({
   page: {
@@ -13,17 +13,17 @@ const Pages = ({ size, ...props }) => {
     <>
       {/* Odd Page */}
       <Page size={size} style={styles.page}>
-        <Cornell {...props} sw={true} />
+        <CornellPage {...props} sw={true} />
       </Page>
       {/* Even Page */}
       <Page size={size} style={styles.page}>
-        <Cornell {...props} sw={false} />
+        <CornellPage {...props} sw={false} />
       </Page>
     </>
   );
 };
 
-const PDF = ({ color = "#000" }) => {
+export default function ({ color = "#000" }) {
   return (
     <PDFViewer className="pdf-viewer">
       <Document>
@@ -38,6 +38,4 @@ const PDF = ({ color = "#000" }) => {
       </Document>
     </PDFViewer>
   );
-};
-
-export default PDF;
+}
