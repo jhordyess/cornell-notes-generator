@@ -10,12 +10,13 @@ body {
   --space: 24px;
 }
 
+div.container > h2 {
+  text-align: center;
+}
 div.container > div {
   display: flex;
   flex-direction: row;
   gap: var(--space);
-}
-div.container > div > div.options {
 }
 div.container > div > .pdf-viewer {
   width: 100%;
