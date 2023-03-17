@@ -10,13 +10,13 @@ Choose the color with the picker, but the transparence has a bug 😶.
 
 Properties: letter paper, double-sided, 1cm of margin, portrait letter, and some predefined values.
 
+## Screenshot
+
+![Home](https://res.cloudinary.com/jhordyess/image/upload/v1675257291/cornell-notes-generator/home.png_rz4gd0.png)
+
 ## Online
 
 See online: [https://jhordyess.github.io/cornell-notes-generator/](https://jhordyess.github.io/cornell-notes-generator/).
-
-## Dockerize
-
-Please review the [docker](https://github.com/jhordyess/cornell-notes-generator/tree/docker) branch.
 
 ## Dev Info
 
