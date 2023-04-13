@@ -19,8 +19,15 @@ const App = () => {
       </div>
       <footer>
         Made with 💪 by{" "}
-        <a href="https://www.jhordyess.com" target="_blank" rel="noreferrer">
+        <a href="https://www.jhordyess.com" target="_blank">
           Jhordyess
+        </a>
+        <br />
+        <a
+          href="https://github.com/jhordyess/cornell-notes-generator"
+          target="_blank"
+        >
+          👉 View on GitHub
         </a>
       </footer>
     </div>
